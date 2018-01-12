@@ -89,10 +89,6 @@ p {
 
 }
 
-p:hover {
-  transform: translateY(-3px);
-}
-
 .projects {
   display: flex;
   flex-direction: row;
@@ -109,7 +105,7 @@ p:hover {
   padding: 5px;
 
   width: 275px;
-  height: 400px;
+  height: 300px;
   margin: 20px;
   margin-bottom: 40px;
   background: #fff;
@@ -123,20 +119,54 @@ p:hover {
 }
 
 .project:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.4);
 }
 
 .black-box {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  background-color: #000;
+  /* background: #F4E2D8; */
+  background: linear-gradient(
+    to right bottom,
+    #5d5b5b,
+    #F4E2D8
+    ) no-repeat center center fixed;
+  background-size: cover;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 200px;
+  position: relative;
 }
 
+.logo-1 {
+  background: url(../img/Bitvisuals.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  border: 1px rgba(93, 91, 91, 0.4) solid;
+  outline: 1px rgba(93, 91, 91, 0.4) solid;
+}
+
+.logo-2 {
+  background: url(../img/HN-Client.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  border: 1px rgba(93, 91, 91, 0.4) solid;
+  outline: 1px rgba(93, 91, 91, 0.4) solid;
+}
+
+.logo-3 {
+  background: url(../img/Guitar-CLI.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  border: 1px rgba(93, 91, 91, 0.4) solid;
+  outline: 1px rgba(93, 91, 91, 0.4) solid;
+}
 
 @keyframes moveInBottom {
   0% {
